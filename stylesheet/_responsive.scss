@@ -1,0 +1,317 @@
+@media screen and (max-width:$box_all_smartphone) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  header {
+    .headerwrap {
+      .flex-pos {
+        display: none;
+      }
+
+      .desktop {
+        display: none;
+      }
+
+      .hamburger {
+        z-index: 30;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+
+        span {
+          height: 1px;
+          width: 100%;
+          background: $black;
+          transition: all 500ms ease 0s;
+          transform-origin: left;
+        }
+      }
+
+      .phone {
+        transition: all 300ms ease 0s;
+        transform: translateX(-100%);
+        display: block;
+        top: 0;
+        right: 0;
+        z-index: 20;
+        background: $black;
+        opacity: 0.6;
+
+        ul {
+          flex-direction: column;
+          justify-content: center;
+          height: 100vh;
+          width: 100vw;
+
+          li {
+            opacity: 1;
+
+            a {
+              padding: 20px;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .headerwrap {
+      .flex-pos {
+        width: 10px;
+      }
+    }
+  }
+
+  main {
+    .circle-responsive {
+      z-index: -1;
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        position: absolute;
+        opacity: 0.6;
+      }
+
+      .res-1 {
+        height: 200px;
+        width: 200px;
+        opacity: 0.3;
+        border-radius: 40% 40% 50% 40%/30% 50% 50%;
+        background: #ffc9e2;
+        animation: rotate 8s linear 0s backwards;
+        animation-iteration-count: infinite;
+      }
+
+      .res-2 {
+        height: 160px;
+        width: 160px;
+        opacity: 1;
+        border-radius: 80% 30% 50% 30%/50%;
+        background: $white;
+        animation: minus_rotate 7s linear 0s backwards;
+        animation-iteration-count: infinite;
+      }
+    }
+
+    .bg {
+      display: none;
+    }
+
+    .wrapper {
+      width: 72%;
+      height: 72%;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: static;
+      z-index: 10;
+    }
+
+    .wrap-header {
+      h1 {
+        display: none;
+        font-size: 24px;
+        left: auto;
+      }
+
+      img {
+        width: 240px;
+        left: 0;
+        bottom: 40px;
+      }
+    }
+
+    .wrap-self {
+      &_image-pc {
+        display: none;
+      }
+
+      &_image-pc {
+        display: block;
+      }
+
+      .wrap-self {
+        $wrap-self-width: 91%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > * {
+          margin: 16px 0 !important;
+        }
+
+        h1 {
+          width: $wrap-self-width;
+          position: static;
+        }
+
+        img {
+          position: static;
+          width: $wrap-self-width;
+          height: auto;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        }
+
+        .btn {
+          min-height: 30px;
+          @include dispaly-center position: static;
+          z-index: 10;
+        }
+      }
+    }
+
+    .content-3 {
+      .wrapper {
+        width: 100%;
+        height: 72%;
+      }
+
+      img {
+        display: none;
+      }
+
+      .wrap-works {
+        height: 100%;
+        width: 100%;
+        background: url("../material/polaroid.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+        .button_wrap,
+        h1 {
+          position: static;
+          padding: 32px 0;
+        }
+
+        h1 {
+          text-align: left;
+        }
+
+        .button_wrap {
+          width: 70%;
+          display: flex;
+          flex-direction: row;
+
+          .btn {
+            margin: 10px;
+            @include dispaly-center position: static;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-wrap {
+      .contact_icon {
+        &_imgwrap {
+          display: none !important;
+        }
+      }
+
+      .wrap-contact {
+        height: 88vh;
+        width: 72vw;
+        grid-template-rows: calc(88vh - 72vw) calc(88vh - 72vw);
+        grid-template-columns: 1fr;
+
+        .contact_section {
+          order: 2;
+        }
+
+        .contact_icon {
+          li {
+            padding: 0;
+          }
+        }
+
+        .contact_mails {
+          justify-content: space-around;
+        }
+
+        .contact_sns {
+          display: grid;
+          grid-template-rows: 36vw 36vw;
+          grid-template-columns: 36vw 36vw;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+
+          li {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            @include dispaly-center;
+
+            a {
+              height: 112px;
+              width: 112px;
+              @include dispaly-center;
+              opacity: 0.9;
+            }
+
+            .link {
+              &-text {
+                display: none;
+              }
+
+              &-image {
+                display: inherit;
+                height: auto;
+                width: 30%;
+              }
+            }
+          }
+        }
+
+        .contact {
+          &_icon,
+          &_section {
+            background: transparent;
+          }
+        }
+      }
+    }
+
+    .translateX {
+      animation: contact_anime 800ms ease 100ms forwards;
+    }
+
+    .translateX_double {
+      animation: contact_anime 800ms ease 300ms forwards;
+    }
+  }
+}

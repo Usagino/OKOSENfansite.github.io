@@ -1,0 +1,38 @@
+@import "_variable.scss";
+@import "_animation.scss";
+@import "_reset.scss";
+@import "_responsive.scss";
+
+html {
+  font-size: 16px;
+  height: 200vh;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+footer{
+
+}
+main{
+  margin-top: 85px;
+}
+#contents{
+  .VueCarousel{
+    position: relative;
+    .VueCarousel-pagination{
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+// index.html -----------------------------------
+#index{
+
+}
+// news -----------------------------------
+
+@import "_responsive.scss";
