@@ -4,7 +4,7 @@
     .movie__contents__title
       h1 ムービーキャンペーン
     .movie__contents__wrap
-      video(controls v-on:mouseover="mouseover")
+      video(controls v-on:mouseover="mouseover" poster="material/okosentaisou.png")
         source(src="material/okosentaisou.mp4" type="video/mp4")
 </template>
 
