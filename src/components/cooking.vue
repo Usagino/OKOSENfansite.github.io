@@ -39,18 +39,42 @@
         thumbnail_image="cooking_1"
         thumbnail_view="1,200"
         bgcolor="#fe888a")
+
+      ranking(
+        bgcolor="#dc90db"
+        image="song"
+        text="「おこせんソング」のアニメーションを公開"
+        view="800")
+      ranking(
+        bgcolor="#73c4ab"
+        image="special"
+        text="おこせんができるまで"
+        view="600")
+      ranking(
+        bgcolor="#fab441"
+        image="gokigen"
+        text="食べ物をテーマにした絵本"
+        view="400")
+      ranking(
+        bgcolor="#f38cab"
+        image="column"
+        text="子供の泣きやませはママも楽になる方法で"
+        view="200")
 </template>
+
 
 <script>
 import thumbnail from './thumbnail.vue'
+import ranking from './ranking.vue'
 export default {
   components: {
     'thumbnail': thumbnail,
+    'ranking': ranking
   }
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .cooking{
   padding-bottom: 2rem;
   background: #fffcec;

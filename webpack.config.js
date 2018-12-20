@@ -93,7 +93,7 @@ module.exports = [{
   devServer: {
     //webpack-dev-server用設定
     open: true, //ブラウザを自動で開く
-    openPage: "./cooking.html", //自動で指定したページを開く
+    openPage: "./photo.html", //自動で指定したページを開く
     contentBase: path.join(__dirname, './'), // HTML等コンテンツのルートディレクトリ
     watchContentBase: true, //コンテンツの変更監視をする
     port: 3000, // ポート番号

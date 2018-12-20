@@ -3,10 +3,7 @@
     <span></span>
   </div>
 </template>
-
-
 <script>
-const hoge = '#F5A260';
 export default {
   props:{
     bgcolor: {}
@@ -16,8 +13,7 @@ export default {
 
 <style lang="scss" scoped>
 .zigzag {
-  --color:red;
-
+  --color: red;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -2,6 +2,11 @@
   .contents
     .contents__title
       h1 コンテンツ
+    thumbnail(
+      thumbnail_text="おつまみ「おこせんブルスケッタ風」"
+      thumbnail_image="cooking_1"
+      thumbnail_view="1,200"
+      bgcolor="#fe888a")
     .contents__wrap
       icon(icon_title="クッキング" image="cooking" bgcolor="#fe888a" link="cooking.html")
       icon(icon_title="スペシャル" image="special" bgcolor="#73c4ab")
@@ -16,11 +21,16 @@
 
 <script>
 import icon from './contents-icon.vue';
+import thumbnail from './thumbnail.vue'
+
 export default {
   components: {
     'icon': icon,
+    'thumbnail': thumbnail
+
   }
 }
+console.log("roading contents.vue!");
 </script>
 
 <style lang="scss" scoped>
@@ -46,6 +56,9 @@ export default {
     }
   }
   &__wrap{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
