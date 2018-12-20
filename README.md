@@ -1,6 +1,6 @@
 # OKOSEN
 
-<https://usagino.github.io/OKOSEN.github.io/>.
+<https://usagino.github.io/OKOSENfansite.github.io/>.
 
 ---
 
