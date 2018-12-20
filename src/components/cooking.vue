@@ -16,17 +16,20 @@
       thumbnail(
         thumbnail_text="おつまみ「おこせんブルスケッタ風」"
         thumbnail_image="cooking_1"
+        thumbnail_view="1,101"
         bgcolor="#fe888a")
       thumbnail(
         thumbnail_text="離乳食「おこせんベジスイーツ」"
         thumbnail_image="cooking_2"
+        thumbnail_view="1,301"
         bgcolor="#fe888a")
       thumbnail(
         thumbnail_text="「ピザ風おこせん」(グルテンフリー)"
         thumbnail_image="cooking_3"
+        thumbnail_view="120"
         bgcolor="#fe888a")
       .cooking__news__box__nextbox
-        h1 もっと見る
+        p もっと見る
     .cooking__news__titlebox
       h1.cooking__news__titlebox--title ランキング
       hr.cooking__news__titlebox--line
@@ -34,6 +37,7 @@
       thumbnail(
         thumbnail_text="おつまみ「おこせんブルスケッタ風」"
         thumbnail_image="cooking_1"
+        thumbnail_view="1,200"
         bgcolor="#fe888a")
 </template>
 
@@ -74,7 +78,7 @@ export default {
           h2{
             padding-left: 10px;
             color: white;
-            font-family: tunnel;
+
           }
           img{
             width: auto;
@@ -108,7 +112,10 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        h1{
+        border-radius: 4px;
+        box-shadow: 4px 4px 0px #f6aaab;
+        p{
+          padding: 4px;
           color: white;
         }
       }

@@ -10,7 +10,6 @@ body {
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: 100%;
   line-height: 1.6;
-  font-family: Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
   font-size: 16px;
   position: relative;
   overflow-x: hidden;
@@ -51,8 +50,12 @@ input, select {
 	font-family: 'tunnel';
 	src: url(../material/tunnel.ttf);
 }
-h1{
+h1,h2,h3,h4{
   font-family: tunnel;
+}
+p,a{
+  font-family: "M PLUS Rounded 1c";
+  font-weight: bold;
 }
 
 /* clearfix */

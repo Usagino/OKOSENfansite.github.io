@@ -8,7 +8,6 @@ import campaign from './components/campaign.vue';
 import contents from './components/contents.vue';
 import cooking from './components/cooking.vue'
 
-
 Vue.use(VueCarousel);
 
 new Vue({

@@ -22,7 +22,6 @@
 
 <script>
 import jagged from './jagged.vue';
-
 export default {
   components: {
     jagged

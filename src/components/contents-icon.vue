@@ -37,7 +37,6 @@ export default {
     }
     p{
       color: white;
-      font-family: tunnel;
     }
   }
 }

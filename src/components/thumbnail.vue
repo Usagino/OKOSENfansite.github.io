@@ -3,8 +3,8 @@
   .thumbnail__wrap
     img(:src='"material/"+ thumbnail_image +".png"')
     .thumbnail__wrap__text
-      h1 {{thumbnail_text}}
-      p {{thumbnail_view}}
+      p {{thumbnail_text}}
+      p.thumbnail__wrap__text--view Viewers {{thumbnail_view}}
 </template>
 
 <script>
@@ -38,9 +38,13 @@ export default {
       padding: 1rem;
       background: white;
 
-      h1{
+      p{
         font-size: 1rem;
         color: black;
+      }
+      &--view{
+        padding-top: 1rem;
+        text-align: right;
       }
     }
   }
