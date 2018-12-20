@@ -16,4 +16,3 @@
   - 企画立案：バナー作成
 - 松葉こうや
   - サイトデザイン:UIデザイン
-# OKOSENfansite.github.io
