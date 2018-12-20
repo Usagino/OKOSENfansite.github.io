@@ -13,6 +13,10 @@ body {
   font-size: 16px;
   position: relative;
   overflow-x: hidden;
+
+  height: 100vh;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
