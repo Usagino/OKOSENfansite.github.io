@@ -8,6 +8,7 @@ import campaign from './components/campaign.vue';
 import contents from './components/contents.vue';
 import cooking from './components/cooking.vue'
 import photo_campaign from './components/photo-campaign.vue'
+import movie from './components/movie.vue'
 
 Vue.use(VueCarousel);
 
@@ -23,7 +24,8 @@ new Vue({
     'campaign': campaign,
     'contents': contents,
     'cooking': cooking,
-    'photo-campaign': photo_campaign
+    'photo-campaign': photo_campaign,
+    'movie':movie
   },
 });
 
