@@ -3,7 +3,21 @@
   .campaign__title
     h1 キャンペーン
   .campaign__carousel
-    card(title="フォトキャンペーン!写真投稿でプ レゼントが当たる！")
+    carousel(v-bind:per-page=1 :autoplay="true" :loop="true" speed="1000")
+      slide
+        card(
+          title_1="フォトキャンペーン!"
+          title_2="写真投稿でプ レゼントが当たる！"
+          image="campaign_1"
+          link="photo.html")
+      slide
+        card(
+          title_1="ムービーキャンペーン！"
+          title_2="みんなのおこせん体操がひとつに？！"
+          image="movie_cam"
+          link="movie.html")
+
+
   .campaign__characters
     .campaign__characters__hirayama
       img(src="material/hirayama.png")
@@ -25,6 +39,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.VueCarousel-pagination{
+  display: none;
+}
 .campaign{
   background: #FFF799;
   position: relative;

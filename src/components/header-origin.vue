@@ -1,7 +1,7 @@
 <template lang='pug'>
   header
     .header
-      img(class="header--logo" src="material/logo.png")
+      img(class="header--logo" src="material/logo.png" href="index.html")
       .header__characters
         img(class="header__characters--char" src="material/hirayama.png")
         img(class="header__characters--char" src="material/hakase.png")
@@ -51,7 +51,7 @@ export default {
     position: fixed;
     z-index: 999;
     .header{
-
+      cursor: pointer;
       @include dot;
       height: 85px;
       width: 100vw;
@@ -63,6 +63,7 @@ export default {
       &--logo{
         width: auto;
         height: 60px;
+        cursor: pointer;
       }
       &__characters{
         display: flex;
